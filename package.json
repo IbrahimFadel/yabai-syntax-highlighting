@@ -3,6 +3,7 @@
 	"displayName": "yabai syntax highlighting",
 	"description": "Basic syntax highlighting for yabai wm",
 	"version": "0.0.1",
+	"publisher": "ibrahimfadel",
 	"engines": {
 		"vscode": "^1.38.0"
 	},
