@@ -1,0 +1,45 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "yabai",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#statements"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.yabai",
+					"match": "\\b(yabai|config|on|off|autoraise|second_child|move|resize|bsp|float)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.yabai",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.yabai",
+					"match": "\\\\."
+				}
+			]
+		},
+		"statements": {
+			"patterns": [
+				{
+					"name": "statements.control.yabai",
+					"match": "\\b(-m|on|off|autoraise|second_child)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": ".yabairc"
+}

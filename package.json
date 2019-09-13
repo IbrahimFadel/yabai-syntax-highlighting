@@ -1,0 +1,34 @@
+{
+	"name": "yabai-syntax-highlighting",
+	"displayName": "yabai syntax highlighting",
+	"description": "Basic syntax highlighting for yabai wm",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.38.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "yabai",
+				"aliases": [
+					"yabai",
+					"yabai"
+				],
+				"extensions": [
+					".yabairc"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "yabai",
+				"scopeName": ".yabairc",
+				"path": "./syntaxes/yabai.tmLanguage.json"
+			}
+		]
+	}
+}
